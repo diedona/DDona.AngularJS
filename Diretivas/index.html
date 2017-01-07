@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Diretivas</title>
+	<meta charset="utf-8" />
+
+    <!-- CSS -->
+    <link href="content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-default" btn-click>Clique!</button>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-default" btn-click-arguments="true">Clique De novo!</button>
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-sm-12">
+                <btn-directive text="Olá Mundo"></btn-directive>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/directives/btn-click.directive.js"></script>
+    <script src="app/directives/btn-click-arguments.directive.js"></script>
+    <script src="app/directives/btn-directive/btn-directive.directive.js"></script>
+    <script src="app/directives/btn-directive/btn-directive.controller.js"></script>
+
+</body>
+</html>
