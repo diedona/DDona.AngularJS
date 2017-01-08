@@ -7,7 +7,7 @@
     <!-- CSS -->
     <link href="content/bootstrap.css" rel="stylesheet" />
 </head>
-<body>
+<body ng-controller="MainController as mainCtrl">
 
     <div class="container">
 
@@ -29,7 +29,7 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <btn-directive text="Olá Mundo"></btn-directive>
+                <btn-directive text="Olá Mundo" click="mainCtrl.alertMessage(2);"></btn-directive>
             </div>
         </div>
 
@@ -38,6 +38,7 @@
     <!-- SCRIPTS -->
     <script src="scripts/angular.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/controllers/main.controller.js"></script>
     <script src="app/directives/btn-click.directive.js"></script>
     <script src="app/directives/btn-click-arguments.directive.js"></script>
     <script src="app/directives/btn-directive/btn-directive.directive.js"></script>

@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\main.controller.js" />
     <Content Include="app\directives\btn-click-arguments.directive.js" />
     <Content Include="app\directives\btn-click.directive.js" />
     <Content Include="app\directives\btn-directive\btn-directive.controller.js" />

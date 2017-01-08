@@ -7,6 +7,13 @@
     BtnDirectiveController.$inject = [];
     function BtnDirectiveController() {
         var vm = this;
+        vm.myClick = myClick;
+
+        //////////////////////////////////////////////////////////////////////////
+
+        function myClick() {
+            vm.click();
+        }
     }
 
 }());

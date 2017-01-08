@@ -9,7 +9,8 @@
         return {
             restrict: 'E',
             bindToController: {
-                text: "@"
+                text: "@",
+                click: "&"
             },
             replace: true,
             templateUrl: 'app/directives/btn-directive/btn-tpl.html',
